@@ -4,7 +4,8 @@ set(CMAKE_CXX_STANDARD 20)
 include($ENV{GEODE_SDK}/cmake/GeodeFile.cmake)
 project(AutoPlayPlus)
 
-setup_geode_mod(AutoPlayPlus
-    SOURCES
-        src/main.cpp
-)
+file(GLOB_RECURSE SOURCES "src/*.cpp" "src/*.hpp")
+
+add_library(${PROJECT_NAME} SHARED ${SOURCES})
+
+setup_geode_mod(${PROJECT_NAME})
