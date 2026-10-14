@@ -4,9 +4,6 @@ set(CMAKE_CXX_STANDARD 20)
 include($ENV{GEODE_SDK}/cmake/GeodeFile.cmake)
 project(AutoPlayPlus)
 
-setup_geode_mod(
-  NAME "Auto Play +"
-  ID "puttipongnark.auto_play_plus"
-)
+setup_geode_mod(AutoPlayPlus)
 
 add_subdirectory(src)
