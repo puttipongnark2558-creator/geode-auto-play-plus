@@ -1,0 +1,27 @@
+{
+  "geode": "3.0.0",
+  "id": "puttipongnark.auto_play_plus",
+  "name": "Auto Play +",
+  "version": "v1.1.0",
+  "developer": "puttipongnark2558-creator",
+  "description": "An advanced Geometry Dash 2.2 auto-play mod with multi-gamemode support and forced Safe Mode.",
+  "dependencies": [],
+  "settings": {
+    "auto-play-enabled": {
+      "name": "Enable Autoplay",
+      "type": "bool",
+      "default": false
+    },
+    "auto-safe-mode": {
+      "name": "Force Safe Mode",
+      "type": "bool",
+      "default": true,
+      "description": "Prevents level completion and stat saving while autoplay is active."
+    },
+    "auto-retry": {
+      "name": "Auto-Retry on Death",
+      "type": "bool",
+      "default": true
+    }
+  }
+}
